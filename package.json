@@ -1,0 +1,28 @@
+{
+  "name": "csshtmltutorial",
+  "version": "0.0.0",
+  "dependencies":
+  {
+    "express": "~4.0.0",
+    "jade": "*",
+    "stylus": "*"
+  },
+  "description": "Introduction to CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chriso2014/cssHtmlTutorial"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "Chris Ormerod",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chriso2014/cssHtmlTutorial/issues"
+  },
+  "homepage": "https://github.com/chriso2014/cssHtmlTutorial"
+}
