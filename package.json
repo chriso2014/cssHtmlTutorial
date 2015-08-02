@@ -1,11 +1,11 @@
 {
-  "name": "csshtmltutorial",
-  "version": "0.0.0",
-  "dependencies":
-  {
-    "express": "~4.0.0",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "express": "3.0.0alpha4",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "nib": "*"
   },
   "description": "Introduction to CSS",
   "main": "index.js",

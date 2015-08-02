@@ -1,0 +1,32 @@
+doctype
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title=title
+        meta(name='description', content='This is an introduction to CSS and HTML')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(href='http://fonts.googleapis.com/css?family=PT+Serif:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='/css/style.css')
+
+    body(class=page)
+
+        block ally-navigation
+
+        block header
+          header.main-header(role='banner')
+            .container
+                .site-title
+                    a.site-logo(href='/') 
+                        span.hidden Introduction to CSS and HTML
+
+
+        main.main-content(role='main', id='main')
+          .container
+            article
+                block content
+
+        footer.main-footer(role='contentinfo')
+            .container
+                block footer
