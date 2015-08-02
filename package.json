@@ -1,5 +1,6 @@
 {
-  "version": "0.0.1",
+  "name": "CSSHTMLTutorial",
+  "version": "0.0.0",
   "private": "true",
   "dependencies": {
     "express": "3.0.0alpha4",
@@ -8,7 +9,7 @@
     "nib": "*"
   },
   "description": "Introduction to CSS",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "test"
   },
