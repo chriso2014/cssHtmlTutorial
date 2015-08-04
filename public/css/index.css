@@ -1,0 +1,299 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5em;
+}
+p,
+pre,
+ul,
+ol,
+dl,
+hr,
+legend,
+address,
+table,
+blockquote {
+  margin-bottom: 1.5em;
+}
+body {
+  background-color: #fff;
+}
+li {
+  list-style-position: outside;
+  margin-left: 1.2em;
+}
+li ol,
+li ul {
+  margin-bottom: 0;
+}
+ul li {
+  list-style-type: disc;
+}
+ul li li {
+  list-style-type: circle;
+}
+ol li {
+  list-style-type: decimal;
+}
+ol li li {
+  list-style-type: lower-roman;
+}
+nav ul,
+nav ol {
+  margin-bottom: 0;
+}
+nav li {
+  list-style: none;
+  margin-left: 0;
+}
+img {
+  border: 0;
+}
+img,
+object {
+  vertical-align: bottom;
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+pre code {
+  display: block;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  background-color: #424646;
+}
+[hidden],
+template {
+  display: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.hidden {
+  display: none !important;
+}
+.vhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+iframe {
+  display: block;
+  margin-bottom: 50px;
+}
+.main-content__container {
+  font-family: 'Droid Serif', serif;
+  background: #ecedee;
+  padding: 40px 30px;
+}
+.main-navigation,
+.main-footer {
+  background-color: #424646;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0 6px 11px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 6px 11px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 11px 3px rgba(0,0,0,0.4);
+}
+.main-navigation.main-footer,
+.main-footer.main-footer {
+  -webkit-box-shadow: 0 -6px 11px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 -6px 11px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 -6px 11px 3px rgba(0,0,0,0.4);
+}
+.main-navigation ul,
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.main-navigation ul li,
+.main-footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+.main-navigation ul a,
+.main-footer ul a {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #0c73b8;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: background-color 0.35s /* Safari */;
+  transition: background-color 0.35s;
+}
+.main-navigation ul a:hover,
+.main-footer ul a:hover,
+.main-navigation ul a.active,
+.main-footer ul a.active {
+  background-color: #e55126;
+}
+.site-title {
+  display: block;
+  width: 670px;
+  height: 371px;
+  margin: 30px auto;
+}
+.site-title .site-logo {
+  background-image: url("../images/htmlandcss.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 670px;
+  height: 371px;
+}
+html {
+  font-size: 18px;
+  font-family: 'Droid Serif', serif;
+  line-height: 1.5;
+  color: #222;
+  font-weight: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+  line-height: 1;
+  color: #222;
+  margin-bottom: 20px;
+}
+h1,
+.h1 {
+  font-size: 1.6em;
+  background-color: #fff;
+  color: #0c73b8;
+  padding: 10px;
+  text-align: center;
+}
+h2,
+.h2 {
+  font-size: 1.6em;
+}
+h3,
+.h3 {
+  font-size: 1.3em;
+  color: #e55126;
+}
+h4,
+.h4 {
+  font-size: 1.2em;
+}
+h5,
+.h5 {
+  font-size: 1.1em;
+}
+h6,
+.h6 {
+  font-size: 1em;
+}

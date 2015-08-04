@@ -7,26 +7,50 @@ html
         meta(name='description', content='This is an introduction to CSS and HTML')
         meta(name='viewport', content='width=device-width, initial-scale=1')
 
-        link(href='http://fonts.googleapis.com/css?family=PT+Serif:400,700', rel='stylesheet', type='text/css')
-        link(rel='stylesheet', href='/css/style.css')
+        link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700', rel='stylesheet', type='text/css')
 
-    body(class=page)
+        link(rel='stylesheet', href='/css/index.css')
+
+    body(class=pagenumber)
 
         block ally-navigation
+
+        block navigation 
+            main#navigation.main-navigation(role='navigation', aria-label='Primary Navigation')
+                .container
+                    nav
+                        ul 
+                            li
+                                a(href='/',class=pagenumber === 0 ? 'active' : '') H
+                            each val, index in [1, 2, 3, 4]
+                                - var number = (index+1)
+                                - var active = number === pagenumber ? 'active' : ''
+                                li
+                                    a(href='/' + number, class=active)=number
 
         block header
           header.main-header(role='banner')
             .container
                 .site-title
                     a.site-logo(href='/') 
-                        span.hidden Introduction to CSS and HTML
+                        span.vhidden Introduction to CSS and HTML
 
 
         main.main-content(role='main', id='main')
-          .container
+          .container.main-content__container
             article
                 block content
 
         footer.main-footer(role='contentinfo')
             .container
                 block footer
+                    .container
+                    nav
+                        ul 
+                            li
+                                a(href='/',class=pagenumber === 0 ? 'active' : '') H
+                            each val, index in [1, 2, 3, 4]
+                                - var number = (index+1)
+                                - var active = number === pagenumber ? 'active' : ''
+                                li
+                                    a(href='/' + number, class=active)=number

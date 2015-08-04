@@ -2,24 +2,216 @@
 1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.40
-4 error install Couldn't read dependencies
-5 error Error: Invalid name: "CSS HTML Tutorial"
-5 error     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:315:15)
-5 error     at Object.module.exports.fixNameField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
-5 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-5 error     at Array.forEach (native)
-5 error     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-5 error     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-5 error     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-5 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
-5 error     at evalmachine.<anonymous>:272:14
-5 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Darwin 14.4.0
-8 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
-9 error cwd /private/var/application/chris/csshtmltutorial
-10 error node -v v0.10.40
-11 error npm -v 1.4.28
-12 verbose exit [ 1, true ]
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/private/var/application/chris/csshtmltutorial',
+5 verbose install   [ 'express', 'jade', 'stylus', 'nib' ] ]
+6 info preinstall CSSHTMLTutorial@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'stylus@*', null ]
+9 verbose cache add name=undefined spec="stylus@*" args=["stylus@*",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'stylus@*',
+10 verbose parsed url   path: 'stylus@*',
+10 verbose parsed url   href: 'stylus@*' }
+11 verbose cache add name="stylus" spec="*" args=["stylus","*"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '*',
+12 verbose parsed url   path: '*',
+12 verbose parsed url   href: '*' }
+13 verbose addNamed [ 'stylus', '*' ]
+14 verbose addNamed [ null, '*' ]
+15 verbose cache add [ 'nib@*', null ]
+16 verbose cache add name=undefined spec="nib@*" args=["nib@*",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'nib@*',
+17 verbose parsed url   path: 'nib@*',
+17 verbose parsed url   href: 'nib@*' }
+18 silly lockFile 7849533d-stylus stylus@*
+19 verbose lock stylus@* /Users/chriso/.npm/7849533d-stylus.lock
+20 verbose cache add [ 'express@3.0.0alpha4', null ]
+21 verbose cache add name=undefined spec="express@3.0.0alpha4" args=["express@3.0.0alpha4",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'express@3.0.0alpha4',
+22 verbose parsed url   path: 'express@3.0.0alpha4',
+22 verbose parsed url   href: 'express@3.0.0alpha4' }
+23 verbose cache add name="nib" spec="*" args=["nib","*"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '*',
+24 verbose parsed url   path: '*',
+24 verbose parsed url   href: '*' }
+25 verbose addNamed [ 'nib', '*' ]
+26 verbose addNamed [ null, '*' ]
+27 silly lockFile 37a66fad-nib nib@*
+28 verbose lock nib@* /Users/chriso/.npm/37a66fad-nib.lock
+29 verbose cache add name="express" spec="3.0.0alpha4" args=["express","3.0.0alpha4"]
+30 verbose parsed url { protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: '3.0.0alpha4',
+30 verbose parsed url   path: '3.0.0alpha4',
+30 verbose parsed url   href: '3.0.0alpha4' }
+31 verbose addNamed [ 'express', '3.0.0alpha4' ]
+32 verbose addNamed [ null, null ]
+33 silly lockFile dcbdbe9e-express-3-0-0alpha4 express@3.0.0alpha4
+34 verbose lock express@3.0.0alpha4 /Users/chriso/.npm/dcbdbe9e-express-3-0-0alpha4.lock
+35 verbose cache add [ 'jade@*', null ]
+36 verbose cache add name=undefined spec="jade@*" args=["jade@*",null]
+37 verbose parsed url { protocol: null,
+37 verbose parsed url   slashes: null,
+37 verbose parsed url   auth: null,
+37 verbose parsed url   host: null,
+37 verbose parsed url   port: null,
+37 verbose parsed url   hostname: null,
+37 verbose parsed url   hash: null,
+37 verbose parsed url   search: null,
+37 verbose parsed url   query: null,
+37 verbose parsed url   pathname: 'jade@*',
+37 verbose parsed url   path: 'jade@*',
+37 verbose parsed url   href: 'jade@*' }
+38 verbose cache add name="jade" spec="*" args=["jade","*"]
+39 verbose parsed url { protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: '*',
+39 verbose parsed url   path: '*',
+39 verbose parsed url   href: '*' }
+40 verbose addNamed [ 'jade', '*' ]
+41 verbose addNamed [ null, '*' ]
+42 silly lockFile ad03ed78-jade jade@*
+43 verbose lock jade@* /Users/chriso/.npm/ad03ed78-jade.lock
+44 verbose request where is /express
+45 verbose request registry http://npm.clockte.ch/
+46 verbose request id b852ea18949b80e8
+47 verbose url raw /express
+48 verbose url resolving [ 'http://npm.clockte.ch/', './express' ]
+49 verbose url resolved http://npm.clockte.ch/express
+50 verbose request where is http://npm.clockte.ch/express
+51 info trying registry request attempt 1 at 20:39:06
+52 http GET http://npm.clockte.ch/express
+53 silly addNameRange { name: 'nib', range: '*', hasData: false }
+54 silly addNameRange { name: 'stylus', range: '*', hasData: false }
+55 silly addNameRange { name: 'jade', range: '*', hasData: false }
+56 verbose request where is /nib
+57 verbose request registry http://npm.clockte.ch/
+58 verbose url raw /nib
+59 verbose url resolving [ 'http://npm.clockte.ch/', './nib' ]
+60 verbose url resolved http://npm.clockte.ch/nib
+61 verbose request where is http://npm.clockte.ch/nib
+62 info trying registry request attempt 1 at 20:39:06
+63 http GET http://npm.clockte.ch/nib
+64 verbose request where is /stylus
+65 verbose request registry http://npm.clockte.ch/
+66 verbose url raw /stylus
+67 verbose url resolving [ 'http://npm.clockte.ch/', './stylus' ]
+68 verbose url resolved http://npm.clockte.ch/stylus
+69 verbose request where is http://npm.clockte.ch/stylus
+70 info trying registry request attempt 1 at 20:39:06
+71 http GET http://npm.clockte.ch/stylus
+72 verbose request where is /jade
+73 verbose request registry http://npm.clockte.ch/
+74 verbose url raw /jade
+75 verbose url resolving [ 'http://npm.clockte.ch/', './jade' ]
+76 verbose url resolved http://npm.clockte.ch/jade
+77 verbose request where is http://npm.clockte.ch/jade
+78 info trying registry request attempt 1 at 20:39:06
+79 http GET http://npm.clockte.ch/jade
+80 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+81 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+82 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+83 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+84 info trying registry request attempt 2 at 20:40:32
+85 http GET http://npm.clockte.ch/express
+86 info trying registry request attempt 2 at 20:40:32
+87 http GET http://npm.clockte.ch/stylus
+88 info trying registry request attempt 2 at 20:40:32
+89 http GET http://npm.clockte.ch/jade
+90 info trying registry request attempt 2 at 20:40:32
+91 http GET http://npm.clockte.ch/nib
+92 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+93 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+94 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+95 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+96 info trying registry request attempt 3 at 20:42:48
+97 http GET http://npm.clockte.ch/express
+98 info trying registry request attempt 3 at 20:42:48
+99 http GET http://npm.clockte.ch/jade
+100 info trying registry request attempt 3 at 20:42:48
+101 http GET http://npm.clockte.ch/stylus
+102 info trying registry request attempt 3 at 20:42:48
+103 http GET http://npm.clockte.ch/nib
+104 silly lockFile dcbdbe9e-express-3-0-0alpha4 express@3.0.0alpha4
+105 silly lockFile dcbdbe9e-express-3-0-0alpha4 express@3.0.0alpha4
+106 silly lockFile ad03ed78-jade jade@*
+107 silly lockFile ad03ed78-jade jade@*
+108 silly lockFile 7849533d-stylus stylus@*
+109 silly lockFile 7849533d-stylus stylus@*
+110 silly lockFile 37a66fad-nib nib@*
+111 silly lockFile 37a66fad-nib nib@*
+112 error network connect ETIMEDOUT
+112 error network This is most likely not a problem with npm itself
+112 error network and is related to network connectivity.
+112 error network In most cases you are behind a proxy or have bad network settings.
+112 error network
+112 error network If you are behind a proxy, please make sure that the
+112 error network 'proxy' config is set properly.  See: 'npm help config'
+113 error System Darwin 14.4.0
+114 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+115 error cwd /private/var/application/chris/csshtmltutorial
+116 error node -v v0.10.40
+117 error npm -v 1.4.28
+118 error syscall connect
+119 error code ETIMEDOUT
+120 error errno ETIMEDOUT
+121 verbose exit [ 1, true ]
