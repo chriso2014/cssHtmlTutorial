@@ -9,20 +9,6 @@ app.set('public', __dirname + '/public');
 app.set('view engine', 'jade');
 app.use(express.logger('dev'));
 
-function compile(str, path){
-  return stylus(str)
-  .set('filename', path)
-  .set('compress', true)
-  .use(nib());
-}
-
-app.use(stylus.middleware({
-  src: __dirname + '/resources',
-  dest: __dirname + '/public',
-  debug: true,
-  force: true
-}));
-
 app.get('/', function (req, res) {
   res.render('index',
    { title : 'Introduction to the course', pagenumber : 0 }
