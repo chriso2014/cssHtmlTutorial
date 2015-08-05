@@ -34,6 +34,21 @@ app.get('/4', function (req, res) {
    { title : 'CSS Introduction', pagenumber : 4 }
   );
 });
+app.get('/5', function (req, res) {
+  res.render('page-5',
+   { title : 'CSS Fundamentals', pagenumber : 5}
+  );
+});
+app.get('/6', function (req, res) {
+  res.render('page-6',
+   { title : 'CSS Fundamentals', pagenumber : 6 }
+  );
+});
+app.get('/7', function (req, res) {
+  res.render('page-7',
+   { title : 'CSS Competition', pagenumber : 7 }
+  );
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
